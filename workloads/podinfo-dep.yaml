@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: podinfo
+  name: karol
   namespace: demo
   labels:
     app: podinfo
@@ -11,7 +11,7 @@ metadata:
     fluxcd.io/tag.init: regex:^3.10.*
     fluxcd.io/tag.podinfod: semver:~3.1
 spec:
-  strategy:
+e strategy:
     rollingUpdate:
       maxUnavailable: 0
     type: RollingUpdate
